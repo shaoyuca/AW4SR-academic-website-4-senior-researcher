@@ -97,25 +97,37 @@ export const BIO_LINKS = [
 
 ### 添加或更换项目图片
 
-`projects: [ … ]` 里每个项目有三个字段：
+`projects: [ … ]` 里每个项目主要有两个字段：
 
 ```tsx
 {
   title: '项目名称',                       // 图片下方显示的文字
-  href: '/projects/my-project-slug',      // 点击后跳转的站内路由，见下方说明
   imageSrc: '/images/my-project.jpg',     // 图片路径，放在 public/images/ 下
 },
 ```
 
 **每行最多展示 5 个项目**，超出的会被忽略（手机端显示为 2 列）。
 
-#### 关于 `href`（跳转路由）
+#### 项目页面路由
 
-链接指向站内的项目页面，你需要创建对应的页面文件：
+项目链接会根据 `title` 自动生成：
 
-- `href: '/projects/soft-robot'` → 创建 `app/projects/soft-robot/page.tsx`
+- `title: 'Soft Robot'` → `/projects/soft-robot`
+- `title: 'Project Alpha'` → `/projects/project-alpha`
 
-页面还没创建时链接依然有效，访问时会显示 404，创建后自动生效。
+生成的项目页面目前会显示项目标题和 “Project detail page coming soon.”
+
+请尽量保持项目标题唯一。如果两个项目标题完全相同，它们会指向同一个自动生成的路由。
+
+高级用法：如果你确实需要自定义跳转地址，可以额外添加可选的 `href` 字段：
+
+```tsx
+{
+  title: 'Project Name',
+  href: '/projects/custom-project-url',
+  imageSrc: '/images/my-project.jpg',
+},
+```
 
 ---
 

@@ -48,11 +48,18 @@ export const BIO_TEXT = (
  * Each entry creates one research-direction block (H2 title + description + project images).
  * You can add or remove entries freely.
  *
- * projects[].title    → label shown below the image
- * projects[].href     → internal route to the project page, e.g. "/projects/my-project"
- *                       Create the matching page under app/projects/my-project/page.tsx
- * projects[].imageSrc → place your image in public/images/ and write "/images/filename.jpg"
- *                       Up to 5 projects are shown per row (2 columns on mobile).
+ * How project pages are created:
+ *   1. Add a project below with a title and imageSrc.
+ *   2. The image appears on the About page.
+ *   3. Clicking the image automatically opens a project detail route generated
+ *      from the title. Example: "Project Alpha" -> "/projects/project-alpha".
+ *   4. The generated detail page currently shows the project title and
+ *      "Project detail page coming soon."
+ *
+ * projects[].title    -> label shown below the image. Keep titles unique.
+ * projects[].imageSrc -> place your image in public/images/ and write "/images/filename.jpg"
+ *                        Up to 5 projects are shown per row (2 columns on mobile).
+ * projects[].href     -> optional advanced override. Most projects do not need this.
  */
 export const RESEARCH_DIRECTIONS: {
   title: string
@@ -74,22 +81,18 @@ export const RESEARCH_DIRECTIONS: {
     projects: [
       {
         title: 'Project Alpha',
-        href: '/projects/project-alpha',    // ← define your own route
         imageSrc: '/images/demo-large.jpg', // ← replace with your image
       },
       {
         title: 'Project Beta',
-        href: '/projects/project-beta',
         imageSrc: 'https://picsum.photos/seed/beta/600/400',
       },
       {
         title: 'Project Gamma',
-        href: '/projects/project-gamma',
         imageSrc: 'https://picsum.photos/seed/gamma/600/400',
       },
       {
         title: 'Project Delta',
-        href: '/projects/project-delta',
         imageSrc: 'https://picsum.photos/seed/delta/600/400',
       },
     ],
@@ -101,17 +104,14 @@ export const RESEARCH_DIRECTIONS: {
     projects: [
       {
         title: 'Project Epsilon',
-        href: '/projects/project-epsilon',
         imageSrc: 'https://picsum.photos/seed/epsilon/600/400',
       },
       {
         title: 'Project Zeta',
-        href: '/projects/project-zeta',
         imageSrc: 'https://picsum.photos/seed/zeta/600/400',
       },
       {
         title: 'Project Eta',
-        href: '/projects/project-eta',
         imageSrc: 'https://picsum.photos/seed/eta/600/400',
       },
     ],

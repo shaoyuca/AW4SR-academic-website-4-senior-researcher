@@ -99,25 +99,37 @@ Delete the entire `{ … },` block for that entry.
 
 ### Adding / changing project images
 
-Each project inside `projects: [ … ]` has three fields:
+Each project inside `projects: [ … ]` has two main fields:
 
 ```tsx
 {
   title: 'Project Name',              // label shown below the image
-  href: '/projects/my-project-slug',  // internal link — see note below
   imageSrc: '/images/my-project.jpg', // image file in public/images/
 },
 ```
 
 **Up to 5 projects** are shown per row. Any extras are ignored.
 
-#### About `href` (the route)
+#### Project page route
 
-The link points to a page on this site. You need to create a matching page file:
+The project link is generated automatically from `title`:
 
-- `href: '/projects/soft-robot'` → create `app/projects/soft-robot/page.tsx`
+- `title: 'Soft Robot'` → `/projects/soft-robot`
+- `title: 'Project Alpha'` → `/projects/project-alpha`
 
-If the page doesn't exist yet, the link still works (it will show a 404 until you create it).
+The generated project page currently shows the project title and "Project detail page coming soon."
+
+Keep project titles unique. If two projects have the same title, they will point to the same generated route.
+
+Advanced use only: if you need a custom route, you may add an optional `href` field:
+
+```tsx
+{
+  title: 'Project Name',
+  href: '/projects/custom-project-url',
+  imageSrc: '/images/my-project.jpg',
+},
+```
 
 ---
 

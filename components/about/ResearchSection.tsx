@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { getProjectHref } from '@/lib/projectRoutes'
 
 export type ProjectItem = {
   title: string
-  href: string
+  href?: string
   imageSrc?: string
 }
 
@@ -27,7 +28,7 @@ export default function ResearchSection({ title, description, projects }: Props)
 
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4 justify-items-start">
         {displayed.map((project) => (
-          <Link key={project.title} href={project.href} className="w-full">
+          <Link key={project.title} href={getProjectHref(project)} className="w-full">
             <div className="relative w-full aspect-[3/2] overflow-hidden bg-gray-200 dark:bg-gray-700">
               {project.imageSrc ? (
                 <Image
