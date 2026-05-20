@@ -125,8 +125,8 @@ export const RESEARCH_DIRECTIONS: {
         imageSrc: 'https://picsum.photos/seed/epsilon/600/400',
       },
       {
-        title: 'Project Zeta',
-        imageSrc: 'https://picsum.photos/seed/zeta/600/400',
+        title: 'Project X',
+        imageSrc: 'https://picsum.photos/seed/projectx/600/400',
       },
       {
         title: 'Project Eta',
