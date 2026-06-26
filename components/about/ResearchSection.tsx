@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { getProjectHref } from '@/lib/projectRoutes'
+import { withBasePath } from '@/lib/assets'
 
 export type ProjectItem = {
   title: string
@@ -32,7 +33,7 @@ export default function ResearchSection({ title, description, projects }: Props)
             <div className="relative w-full aspect-[3/2] overflow-hidden bg-gray-200 dark:bg-gray-700">
               {project.imageSrc ? (
                 <Image
-                  src={project.imageSrc}
+                  src={withBasePath(project.imageSrc)}
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) calc(50vw - 24px), 20vw"

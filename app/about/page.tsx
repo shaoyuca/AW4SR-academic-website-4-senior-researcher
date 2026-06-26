@@ -4,6 +4,7 @@ import ResearchSection from '@/components/about/ResearchSection'
 import OurApproachSection from '@/components/about/OurApproachSection'
 import ContactSection from '@/components/about/ContactSection'
 import InlineLink from '@/components/ui/InlineLink'
+import { withBasePath } from '@/lib/assets'
 
 function Divider() {
   return <div className="border-t border-gray-200 dark:border-gray-800 mb-16" />
@@ -16,7 +17,7 @@ export default function AboutPage() {
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-8 mb-16 md:items-start">
         <div className="relative w-[180px] h-[200px] shrink-0 mt-[6px] overflow-hidden bg-gray-200 dark:bg-gray-700">
-          <Image src={BIO_PHOTO.src} alt={BIO_PHOTO.alt} fill sizes="180px" className="object-cover object-top" priority />
+          <Image src={withBasePath(BIO_PHOTO.src)} alt={BIO_PHOTO.alt} fill sizes="180px" className="object-cover object-top" priority />
         </div>
         <div className="flex flex-col gap-4">
           <p className="text-body text-[#6B6B6B] dark:text-gray-400">{BIO_TEXT}</p>

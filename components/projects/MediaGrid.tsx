@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { withBasePath } from '@/lib/assets'
 
 type ImageItem = {
   type: 'image'
@@ -21,7 +22,7 @@ export default function MediaGrid({ items }: { items: MediaItem[] }) {
         item.type === 'image' ? (
           <div key={i} className="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
             <Image
-              src={item.src}
+              src={withBasePath(item.src)}
               alt={item.alt}
               fill
               sizes="(max-width: 768px) calc(100vw - 80px), calc(50vw - 60px)"

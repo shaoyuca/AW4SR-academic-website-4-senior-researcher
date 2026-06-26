@@ -1,3 +1,5 @@
+import { withBasePath } from '@/lib/assets'
+
 type Props = {
   title: string
   imageSrc: string
@@ -9,7 +11,7 @@ export default function DirectionBanner({ title, imageSrc }: Props) {
     <div
       role="img"
       aria-label={title}
-      style={{ backgroundImage: `url(${imageSrc})` }}
+      style={{ backgroundImage: `url(${withBasePath(imageSrc)})` }}
       className="relative w-full h-32 md:h-48 bg-cover bg-center bg-fixed"
     >
       {/* Scrim for text legibility */}

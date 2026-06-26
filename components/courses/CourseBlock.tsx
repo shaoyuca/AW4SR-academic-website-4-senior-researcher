@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import InlineLink from '@/components/ui/InlineLink'
 import type { Course } from '@/content/courses'
+import { withBasePath } from '@/lib/assets'
 
 type Props = {
   course: Course
@@ -36,7 +37,7 @@ export default function CourseBlock({ course }: Props) {
         <>
           <div className="relative w-full aspect-video bg-gray-200 dark:bg-gray-800 overflow-hidden">
             <Image
-              src={video.src}
+              src={withBasePath(video.src)}
               alt={video.alt ?? video.title}
               fill
               sizes={course.videos && course.videos.length > 1 ? '(max-width: 768px) calc(100vw - 40px), 50vw' : '(max-width: 768px) calc(100vw - 40px), 100vw'}

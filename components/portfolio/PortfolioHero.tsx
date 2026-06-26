@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { withBasePath } from '@/lib/assets'
 
 type Props = {
   imageSrc: string
@@ -9,7 +10,7 @@ export default function PortfolioHero({ imageSrc, imageAlt }: Props) {
   return (
     <div className="relative w-full h-32 md:h-48 overflow-hidden">
       <Image
-        src={imageSrc}
+        src={withBasePath(imageSrc)}
         alt={imageAlt}
         fill
         sizes="100vw"

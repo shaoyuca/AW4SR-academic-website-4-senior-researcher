@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import InlineLink from '@/components/ui/InlineLink'
+import { withBasePath } from '@/lib/assets'
 
 export type ApproachItem = {
   title: string
@@ -94,7 +95,7 @@ export default function OurApproachSection({ title, description, items, images }
               className="relative block w-40 h-28 overflow-hidden bg-gray-200 dark:bg-gray-700"
             >
               <Image
-                src={img.src}
+                src={withBasePath(img.src)}
                 alt={img.alt}
                 fill
                 sizes="160px"

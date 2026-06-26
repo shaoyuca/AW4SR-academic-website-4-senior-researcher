@@ -109,7 +109,7 @@ export const DIRECTIONS: Direction[] = [
             { label: 'PDF',   href: 'https://arxiv.org/pdf/2403.05182v1' },
             { label: 'Video', href: 'https://www.youtube.com/watch?v=6g25o7i7kSM' },
           ],
-          mediaSrc: '/images/vibopneumo.gif',
+          mediaSrc: '/images/ViboPneumo.gif',
           mediaAlt: 'ViboPneumo finger-worn haptic device',
       },
 

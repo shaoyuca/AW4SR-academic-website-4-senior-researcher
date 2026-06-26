@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { withBasePath } from '@/lib/assets'
 
 type Props = {
   title: string
@@ -22,7 +23,7 @@ export default function ContactSection({ title, intro, imageSrc, imageAlt, mapEm
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-200 dark:bg-gray-700">
           <Image
-            src={imageSrc}
+            src={withBasePath(imageSrc)}
             alt={imageAlt}
             fill
             sizes="(max-width: 768px) calc(100vw - 80px), calc(50vw - 64px)"

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import InlineLink from '@/components/ui/InlineLink'
+import { withBasePath } from '@/lib/assets'
 
 export type ProjectLink = {
   label: string
@@ -24,7 +25,7 @@ export default function ProjectCard({ title, authors, venue, keywords, award, li
       {/* Media — self-start prevents grid stretch from breaking the 4:3 ratio */}
       <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-200 dark:bg-gray-700 self-start">
         <Image
-          src={mediaSrc}
+          src={withBasePath(mediaSrc)}
           alt={mediaAlt}
           fill
           sizes="(max-width: 768px) calc(100vw - 80px), 240px"

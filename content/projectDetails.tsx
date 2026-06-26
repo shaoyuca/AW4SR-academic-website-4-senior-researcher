@@ -87,12 +87,12 @@ for visual-haptic matching, compared to the condition of a bare finger. We also 
         },
         {
           type: 'image',
-          src: '/images/vibopneumo.gif',
+          src: '/images/ViboPneumo.gif',
           alt: 'ViboPneumo haptic device demonstration',
         },
         {
           type: 'image',
-          src: '/images/viboabric.gif',
+          src: '/images/Viboabric.gif',
           alt: 'ViboPneumo haptic device demonstration',
         },
         {
@@ -240,7 +240,7 @@ low-light conditions and light-weight object grasping.
       },
       {
         type: 'image',
-        src: '/images/CMVT2.png',
+        src: '/images/cmvt2.png',
         alt: 'CMVT visual-tactile cross-modal data generation overview',
       },
     ],

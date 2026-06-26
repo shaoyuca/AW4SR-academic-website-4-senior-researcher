@@ -102,7 +102,7 @@ export const RESEARCH_DIRECTIONS: {
       },
       {
         title: 'ViChewReality',
-        imageSrc: '/images/chewvr.png',
+        imageSrc: '/images/ChewVR.png',
       },
       {
         title: 'ThermOuch',
@@ -249,7 +249,7 @@ export const CONTACT = {
   title: 'Contact',                            // ← H2 heading, edit freely
   intro:
     'We are based in the Engineering Design & Innovation Centre, College of Design and Engineering. Prospective students and collaborators are welcome to reach out by email.',
-  imageSrc: '/images/e2a.png', // ← replace with /images/your-building.jpg
+  imageSrc: '/images/E2A.png', // ← replace with /images/your-building.jpg
   imageAlt: 'Engineering Design & Innovation Centre',
   mapEmbedUrl:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7782!2d103.7763!3d1.2966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnNDcuOCJOIDEwM8KwNDYnMzQuNyJF!5e0!3m2!1sen!2ssg!4v1700000000000', // ← paste your Google Maps embed URL here
