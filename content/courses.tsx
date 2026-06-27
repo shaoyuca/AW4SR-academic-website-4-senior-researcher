@@ -85,20 +85,22 @@ export const COURSES: Course[] = [
     videos: [
       {
         title: 'Olfactory Display for Artwork Appreciation in VR',
-        projectBy: 'Gao Muzi, Gan Quanhao, Lin Tao, Ouyang Fuxi, Wei Leming',
+        projectBy: 'Gan Quanhao, Lin Tao, Ouyang Fuxi, Gao Muzi, Wei Leming',
         note: (
           <>
-            <Strong>Published in Computers and Education: X Reality (CEXR)</Strong>
+            📄 <Strong>Published in Computers & Education: X Reality (CEXR)</Strong>
+            <br />doi:  <InlineLink href="https://doi.org/10.1016/j.cexr.2025.100109" external>https://doi.org/10.1016/j.cexr.2025.100109</InlineLink>
           </>
         ),
         src: 'https://www.youtube-nocookie.com/embed/fS7L8N_i6rc',
       },
       {
         title: 'Breatho: Real-Time Respiratory Guidance System for Amateur Runners',
-        projectBy: 'Chen Xialu, Liu Huayi, Tao Yuheng, Huang Yutong, Lyu Chuang',
+        projectBy: 'Tao Yuheng, Chen Xialu, Liu Huayi, Huang Yutong, Lyu Chuang',
         note: (
           <>
-            <Strong>DIS 2026 Student Design Competition</Strong>
+            📄 <Strong>Published in DIS 2026 Student Design Competition</Strong>
+            <br />doi: <InlineLink href="https://doi.org/10.1145/3802974.3810896" external>https://doi.org/10.1145/3802974.3810896</InlineLink>
           </>
         ),
         src: 'https://www.youtube-nocookie.com/embed/AOuSB8KtWEM',
@@ -139,20 +141,21 @@ export const COURSES: Course[] = [
         projectBy: 'Mullappalli Devesh (Year 3, Economics), Park Junha (Year 3, Industrial and Systems Engineering), Bao Ying (Year 3, Electrical Engineering), Chen Yun Feng (Year 3, Mechanical Engineering)',
         note: (
           <>
-            Showcasing at <Strong>Singapore Chinese Cultural Centre (SCCC)</Strong> and demonstrating to <Strong>Mr Baey Yam Keng, Minister of State for Culture, Community and Youth of Singapore</Strong>
+            ✨ Showcasing at <InlineLink href="https://singaporeccc.org.sg/" external>Singapore Chinese Cultural Centre (SCCC)</InlineLink> and demonstrating to <Strong>Mr Baey Yam Keng</Strong>, Minister of State for Culture, Community and Youth of Singapore<br />
+            ✨ Featured in EDIC Project Showcase: <InlineLink href="https://cde.nus.edu.sg/edic/projects/innovating-with-immersive-reality/scenting-the-past/" external>CDE3301 project showcase</InlineLink>
           </>
         ),
         mediaCoverage: (
           <>
             Media coverage: <InlineLink href="https://cde.nus.edu.sg/news/scenting-the-past-bringing-hawker-culture-to-life-in-vr/" external>CDE New Student Achievements</InlineLink>
-            <br />
-            Featured in EDIC Project Showcase: <InlineLink href="https://cde.nus.edu.sg/edic/projects/innovating-with-immersive-reality/scenting-the-past/" external>CDE3301 project showcase</InlineLink>
+            
+            
           </>
         ),
         type: 'image',
         src: '/images/hawker3301.png',
         alt: 'Scenting the Past student project showcase',
-        credit: 'Photo credit: EDIC',
+        credit: 'Photo credit: NUS EDIC',
       },
     ],
     },
@@ -180,10 +183,12 @@ export const COURSES: Course[] = [
         videos: [
       {
         title: 'ThermoFace: Thermo-vibratory on-face haptic display for enhanced VR immersion',
-        projectBy: 'Wang Bo (Year 4 Electrical Engineering), Mingyuan Jing (Year 3 Electrical Engineering), Xinyu Li (Year 4 Electrical Engineering), Yuxuan Li (Year 4 Electrical Engineering), Yalin Peng (Year 4 Electrical Engineering)',
+        projectBy: 'Wang Bo (Year 4 Electrical Engineering), Assisted by Mingyuan Jing (Year 2 Electrical Engineering), Xinyu Li (Year 3 Electrical Engineering), Yunxuan Li (Year 3 Electrical Engineering), Yalin Peng (Year 3 Electrical Engineering) through UROP',
         note: (
           <>
-            Showcasing the project to <Strong>NUS President Professor Tan Eng Chye</Strong> and <Strong>CDE Dean Prof Teo Kie Leong</Strong> at EDIC project showcase event
+            ✨ Showcasing the project to <Strong>NUS President Professor Tan Eng Chye</Strong> and <Strong>CDE Dean Prof Teo Kie Leong</Strong> at EDIC project showcase event
+            <br />
+            ✨ Invited oral presentation at the <InlineLink href="https://eng.kmutt.ac.th/en/ice-activities/ispc-2025/" external>International Senior Project Conference (ISPC) 2025</InlineLink> (Annual event for showcasing FYP of Year 4 students from the world)
           </>
         ),
         mediaCoverage: (
@@ -194,7 +199,7 @@ export const COURSES: Course[] = [
         type: 'image',
         src: '/images/thermoface.jpg',
         alt: 'thermoface',
-        credit: 'Photo credit: EDIC',
+        credit: 'Photo credit: NUS CDE',
       },
     ],
   },

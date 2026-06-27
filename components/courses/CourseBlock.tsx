@@ -20,7 +20,7 @@ export default function CourseBlock({ course }: Props) {
       </h3>
       {video.projectBy && (
         <p className="text-body text-[#6B6B6B] dark:text-gray-400 mb-1">
-          Project by: {video.projectBy}
+          👥 Project by: {video.projectBy}
         </p>
       )}
       {video.note && (
@@ -30,7 +30,7 @@ export default function CourseBlock({ course }: Props) {
       )}
       {video.mediaCoverage && (
         <p className="text-body text-[#6B6B6B] dark:text-gray-400 mb-3">
-          {video.mediaCoverage}
+          📰 {video.mediaCoverage}
         </p>
       )}
       {video.type === 'image' ? (
